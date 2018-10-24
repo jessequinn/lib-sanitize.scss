@@ -1,7 +1,7 @@
 # sanitize.scss
-> sanitize.css ported to sass
+> sanitize.css for SCSS
 
-Port of [sanitize.css](https://github.com/csstools/sanitize.css) to sass
+[sanitize.css](https://github.com/csstools/sanitize.css) wrapped in SCSS.
 
 # Install
 npm:
