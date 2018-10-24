@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jessequinn/sanitize.scss.git"
+    "url": "git+https://github.com/jessequinn/lib-sanitize.scss.git"
   },
   "ignore": [
     "node_modules",
@@ -28,7 +28,7 @@
   "author": "Jesse Thomas Ernest Quinn",
   "license": "CC0-1.0",
   "bugs": {
-    "url": "https://github.com/jessequinn/sanitize.scss/issues"
+    "url": "https://github.com/jessequinn/lib-sanitize.scss/issues"
   }
-  "homepage": "https://github.com/jessequinn/sanitize.scss#readme"
+  "homepage": "https://github.com/jessequinn/lib-sanitize.scss#readme"
 }
