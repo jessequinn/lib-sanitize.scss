@@ -8,11 +8,11 @@
  * 2. Add border box sizing in all browsers (opinionated).
  */
 
-*,
-::before,
-::after {
-  background-repeat: no-repeat; /* 1 */
-  box-sizing: border-box; /* 2 */
+*, ::before, ::after {
+  background-repeat: no-repeat;
+  /* 1 */
+  box-sizing: border-box;
+  /* 2 */
 }
 
 /**
@@ -20,10 +20,11 @@
  * 2. Add vertical alignment inheritance in all browsers (opinionated).
  */
 
-::before,
-::after {
-  text-decoration: inherit; /* 1 */
-  vertical-align: inherit; /* 2 */
+::before, ::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */
 }
 
 /**
@@ -37,27 +38,22 @@
  */
 
 html {
-  cursor: default; /* 1 */
-  font-family:
-          system-ui,
-            /* macOS 10.11-10.12 */ -apple-system,
-            /* Windows 6+ */ Segoe UI,
-            /* Android 4+ */ Roboto,
-            /* Ubuntu 10.10+ */ Ubuntu,
-            /* Gnome 3+ */ Cantarell,
-            /* KDE Plasma 5+ */ Noto Sans,
-            /* fallback */ sans-serif,
-            /* macOS emoji */ "Apple Color Emoji",
-            /* Windows emoji */ "Segoe UI Emoji",
-            /* Windows emoji */ "Segoe UI Symbol",
-            /* Linux emoji */ "Noto Color Emoji"; /* 2 */
-
-  line-height: 1.15; /* 3 */
-  -moz-tab-size: 4; /* 4 */
-  tab-size: 4; /* 4 */
-  -ms-text-size-adjust: 100%; /* 5 */
-  -webkit-text-size-adjust: 100%; /* 5 */
-  word-break: break-word; /* 6 */
+  cursor: default;
+  /* 1 */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 2 */
+  line-height: 1.15;
+  /* 3 */
+  -moz-tab-size: 4;
+  /* 4 */
+  tab-size: 4;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+  word-break: break-word;
+  /* 6 */
 }
 
 /* Sections
@@ -90,8 +86,10 @@ h1 {
  */
 
 hr {
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
 }
 
 /**
@@ -119,17 +117,10 @@ nav {
  */
 
 pre {
-  font-family:
-          /* macOS 10.10+ */ Menlo,
-    /* Windows 6+ */ Consolas,
-    /* Android 4+ */ Roboto Mono,
-    /* Ubuntu 10.10+ */ Ubuntu Monospace,
-    /* KDE Plasma 5+ */ Noto Mono,
-    /* KDE Plasma 4+ */ Oxygen Mono,
-    /* Linux/OpenOffice fallback */ Liberation Mono,
-    /* fallback */ monospace; /* 1 */
-
-  font-size: 1em; /* 2 */
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /* Text-level semantics
@@ -156,8 +147,7 @@ abbr[title] {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-b,
-strong {
+b, strong {
   font-weight: bolder;
 }
 
@@ -167,20 +157,11 @@ strong {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-code,
-kbd,
-samp {
-  font-family:
-          /* macOS 10.10+ */ Menlo,
-    /* Windows 6+ */ Consolas,
-    /* Android 4+ */ Roboto Mono,
-    /* Ubuntu 10.10+ */ Ubuntu Monospace,
-    /* KDE Plasma 5+ */ Noto Mono,
-    /* KDE Plasma 4+ */ Oxygen Mono,
-    /* Linux/OpenOffice fallback */ Liberation Mono,
-    /* fallback */ monospace; /* 1 */
-
-  font-size: 1em; /* 2 */
+code, kbd, samp {
+  font-family: Menlo, Consolas, Roboto Mono, Ubuntu Monospace, Noto Mono, Oxygen Mono, Liberation Mono, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
 }
 
 /**
@@ -197,15 +178,11 @@ small {
  *    in all browsers (opinionated).
  */
 
-::-moz-selection {
-  background-color: #b3d4fc; /* 1 */
-  color: #000; /* 1 */
-  text-shadow: none;
-}
-
-::selection {
-  background-color: #b3d4fc; /* 1 */
-  color: #000; /* 1 */
+::-moz-selection, ::selection {
+  background-color: #b3d4fc;
+  /* 1 */
+  color: #000;
+  /* 1 */
   text-shadow: none;
 }
 
@@ -216,12 +193,7 @@ small {
  * Change the alignment on media elements in all browers (opinionated).
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
+audio, canvas, iframe, img, svg, video {
   vertical-align: middle;
 }
 
@@ -229,8 +201,7 @@ video {
  * Add the correct display in IE 9-.
  */
 
-audio,
-video {
+audio, video {
   display: inline-block;
 }
 
@@ -255,17 +226,18 @@ img {
  * Change the fill color to match the text color in all browsers (opinionated).
  */
 
-svg:not([fill]) {
-  fill: currentColor;
+svg {
+  &:not([fill]) {
+    fill: currentColor;
+  }
+  &:not(:root) {
+    overflow: hidden;
+  }
 }
 
 /**
  * Hide the overflow in IE.
  */
-
-svg:not(:root) {
-  overflow: hidden;
-}
 
 /* Tabular data
  * ========================================================================== */
@@ -285,10 +257,7 @@ table {
  * Inherit styling in all browsers (opinionated).
  */
 
-button,
-input,
-select,
-textarea {
+button, input, select, textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -298,9 +267,7 @@ textarea {
  * Remove the margin in Safari.
  */
 
-button,
-input,
-select {
+button, input, select {
   margin: 0;
 }
 
@@ -310,18 +277,18 @@ select {
  */
 
 button {
-  overflow: visible; /* 1 */
-  text-transform: none; /* 2 */
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+  /* 2 */
+  -webkit-appearance: button;
 }
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -347,10 +314,14 @@ input {
  */
 
 legend {
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  white-space: normal; /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
 }
 
 /**
@@ -359,8 +330,10 @@ legend {
  */
 
 progress {
-  display: inline-block; /* 1 */
-  vertical-align: baseline; /* 2 */
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
 /**
@@ -378,17 +351,19 @@ select {
  */
 
 textarea {
-  margin: 0; /* 1 */
-  overflow: auto; /* 2 */
-  resize: vertical; /* 3 */
+  margin: 0;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+  /* 3 */
 }
 
 /**
  * Remove the padding in IE 10-.
  */
 
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   padding: 0;
 }
 
@@ -398,16 +373,17 @@ textarea {
  */
 
 [type="search"] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
 }
 
 /**
  * Correct the cursor style of increment and decrement buttons in Safari.
  */
 
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -434,8 +410,10 @@ textarea {
  */
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
 }
 
 /**
@@ -486,10 +464,9 @@ dialog {
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
-}
-
-dialog:not([open]) {
-  display: none;
+  &:not([open]) {
+    display: none;
+  }
 }
 
 /*
@@ -528,17 +505,11 @@ template {
       in all browsers (opinionated).
  */
 
-a,
-area,
-button,
-input,
-label,
-select,
-summary,
-textarea,
-[tabindex] {
-  -ms-touch-action: manipulation; /* 1 */
-  touch-action: manipulation; /* 2 */
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+  /* 2 */
 }
 
 /**
@@ -573,8 +544,7 @@ textarea,
  * inoperable elements in all browsers (opinionated).
  */
 
-[aria-disabled="true"],
-[disabled] {
+[aria-disabled="true"], [disabled] {
   cursor: not-allowed;
 }
 

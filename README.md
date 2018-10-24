@@ -5,4 +5,4 @@
 
 # Install
 npm:
-```npm install sanitize.scss```
+```npm install lib-sanitize.scss```
