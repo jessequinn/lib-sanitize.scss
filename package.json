@@ -1,0 +1,25 @@
+{
+  "name": "sanitize.scss",
+  "version": "8.0.0",
+  "description": "sanitize.css in SCSS format",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessequinn/sanitize.scss.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "scss",
+    "stylesheet"
+  ],
+  "author": "Jesse Thomas Ernest Quinn",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/jessequinn/sanitize.scss/issues"
+  },
+  "homepage": "https://github.com/jessequinn/sanitize.scss#readme"
+}
